@@ -1,0 +1,23 @@
+First step install react query
+1.npm install react-query
+2.import useQuery from react-query
+3.Create a variable object and assign it to useQuery
+    e.g.const{}=useQuery
+    3.1.The useQuery takes two arguments an "key" and a "function".
+    syntax:const{}=useQuery("key_name",An aerrow function name or an ()=>it be an direct aerrow function)
+4.We should import "Queryclient" and "QueryClientProvider" 
+5.Queryclient is used to create an new query.
+    syntax:const variable_name=new Queryclient()
+6.We should wrap our entire reactapp with QueryClientProvider 
+    6.1.Next we should pass "client" inside the QueryClientProvider component.
+        syntax:<QueryClientProvider client= variable>
+        In the above the variable denotes the variable that we already created for Queryclient
+
+keywords:
+keepPreviousData:true ;It keeps the data until it fetches the next data. note:it should be inside the "useQuery"
+status:It gives status of the query. eg.if("loading"),if("error") etc
+isPreviousData;It is used to allow only previous data .We cannot click previous data and next data at a time with this function
+isLoading
+isError
+querykey
+
